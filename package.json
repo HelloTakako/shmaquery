@@ -4,6 +4,7 @@
   "description": "Litter than jQuery",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf dist && mkdir dist && uglifyjs src/* -o dist/shmaquery.min.js --compress --mangle",
     "test": "mocha --reporter nyan --recursive --require chai/register-expect"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.3"
+    "mocha": "^6.1.3",
+    "uglify-js": "^3.5.4"
   }
 }
