@@ -4,7 +4,7 @@
   "description": "Litter than jQuery",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter dot --recursive --require chai/register-expect"
+    "test": "mocha --reporter nyan --recursive --require chai/register-expect"
   },
   "repository": {
     "type": "git",
