@@ -1,4 +1,4 @@
-# shmaquery
+# shmaquery🔥
 
 Shmaquery is a funny reinterpretation of jQuery
 
