@@ -4,7 +4,7 @@
   "description": "Litter than jQuery",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Error: no test specified' && exit 1"
+    "test": "mocha --reporter nyan --recursive --require chai/register-expect"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
     "JavaScript"
   ],
   "author": "\"\"",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.3"
+  }
 }
