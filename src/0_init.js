@@ -9,10 +9,10 @@ function あ() {}
   return el.classList.add(className);
 };
 
-あ.shmAttr = function(elem) {
-  return elem.getAttribute("src");
+あ.shmAttr = function(el, attr) {
+  return el.getAttribute(attr);
 };
 
-あ.shmIndexOf = function(arr) {
+あ.shmIndexOf = function(arr, item) {
   return arr.indexOf(item);
 };
