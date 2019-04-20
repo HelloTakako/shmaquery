@@ -13,6 +13,6 @@ function あ() {}
   return el.getAttribute(attr);
 };
 
-あ.shmIndexOf = function(arr, item) {
-  return arr.indexOf(item);
+あ.shmIndexOf = function(arr, index) {
+  return arr.indexOf(index);
 };

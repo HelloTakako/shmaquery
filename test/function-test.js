@@ -22,22 +22,22 @@ describe("#shmadClass", () => {
     あ.shmadClass(el, c);
     expect(el.classList.value).to.equal("yas");
   });
-
-  // it("should fail if the class name is not 'yas'.", () => {
-  //   const d = "co";
-  //   const badFnAddClass = function() {
-  //     あ.shmadClass(el, d);
-  //   };
-
-  //   expect(badFnAddClass).to.throw(AssertionError);
-  // });
 });
 
 describe("#shmAttr", () => {
-  it("should get an attribute 'src'", () => {
-    const elem = document.createElement("p");
-    const c = "yas";
-    あ.shmadClass(el, c);
-    expect(el.classList.value).to.equal("yas");
+  it("should get an attribute", () => {
+    const el = document.createElement("p");
+    el.classList.add("shmAttr");
+    const c = "class";
+    あ.shmAttr(el, c);
+    expect(el.classList.value).to.equal("shmAttr");
+  });
+});
+
+describe("#shmIndexOf", () => {
+  it("should get an index number", () => {
+    const arrEx = ["apple", "banana", "orange", "grape"];
+    const result = あ.shmIndexOf(arrEx, "banana");
+    expect(result).to.equal(1);
   });
 });
