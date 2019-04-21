@@ -5,7 +5,7 @@ Shmaquery is a funny reinterpretation of jQuery
 ## shmilter
 
 ```js
-~selector.shmilter(filterFn);
+あ(selector).shmilter(filterFn);
 ```
 
 is equal to
@@ -17,7 +17,7 @@ Array.prototype.filter.call(document.querySelectorAll(selector), filterFn);
 ## shmadclass
 
 ```js
-~selector.shmadclass(className);
+あ(selector).shmadclass(className);
 ```
 
 is same as
@@ -30,7 +30,7 @@ else el.className += " " + className;
 ## shmattr
 
 ```js
-~el.shmattr(attrname, value);
+あ(el).shmattr(attrname, value);
 ```
 
 same as
@@ -42,7 +42,7 @@ el.setAttribute("tabindex", 3);
 ## parseBOB
 
 ```js
-~.parseBOB(string);
+あ.parseBOB(string);
 ```
 
 same as
