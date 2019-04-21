@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && uglifyjs src/* -o dist/shmaquery.min.js --compress --mangle",
-    "test": "mocha --reporter nyan --recursive --require chai/register-expect"
+    "test": "mocha --reporter nyan --recursive --require chai/register-expect",
+    "test:puppeteer": "mocha test/puppeteer-test.js --reporter nyan --recursive --require chai/register-expect --require chai-match"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.3",
+    "chai-match": "^1.1.1",
+    "mocha": "^6.1.4",
+    "puppeteer": "^1.14.0",
     "uglify-js": "^3.5.4"
   }
 }
