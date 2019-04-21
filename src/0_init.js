@@ -3,7 +3,6 @@ function あ() {}
 
 あ.parseBOB = function(string) {
   return JSON.parse(string);
-<<<<<<< HEAD
 }
 
 あ.shtrim = function(string) {
@@ -18,9 +17,6 @@ function あ() {}
   return array.forEach(callback);
 }
 
-=======
-};
-
 あ.shmadClass = function(el, className) {
   return el.classList.add(className);
 };
@@ -32,4 +28,3 @@ function あ() {}
 あ.shmIndexOf = function(arr, index) {
   return arr.indexOf(index);
 };
->>>>>>> FETCH_HEAD
