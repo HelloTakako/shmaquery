@@ -15,7 +15,6 @@ describe("#parseBOB", () => {
   });
 });
 
-<<<<<<< HEAD
 describe("#shtrim", () => {
   describe("case with a trailing whitespace", () => {
     it("should remove it", () => {
@@ -59,7 +58,6 @@ describe("#shtype", () => {
   })
 })
 
-=======
 describe("#shmadClass", () => {
   it("should add a class 'className'", () => {
     const el = document.createElement("p");
@@ -86,4 +84,3 @@ describe("#shmIndexOf", () => {
     expect(result).to.equal(1);
   });
 });
->>>>>>> FETCH_HEAD
